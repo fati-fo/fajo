@@ -1,0 +1,530 @@
+
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>tanasob gym </title>
+<style>
+
+body {background-color:#D3D3D3;font-family:IPT.Yekan; margin:0;margin-right:0.25%;margin-left:0.25%;}
+ul.MyMenu{
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ overflow: hidden;
+background: black;
+}
+ul.MyMenu li{
+ float:right;
+}
+ul.MyMenu li a, li.dropbtn{
+ display:block;
+ text-decoration:none;
+ padding:10px 15px;
+}
+ul.MyMenu li a{
+ color:white;
+}
+ul.MyMenu .dropdown-content a{
+ color:#000;
+}
+ul.MyMenu .dropdown-content a:hover{
+ color:#fff;
+}
+.dropdown:hover .dropbtn{
+ background-color:#d51c00;
+}
+ul.MyMenu li a:hover{
+ background-color:#d51c00;
+}
+li.dropdown{
+ display: inline-block;
+}
+.dropdown-content{
+ display: none;
+ position: absolute;
+ background-color: #fff;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 999;
+}
+.dropdown-content a{
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: right;
+}
+li.dropdown:hover .dropdown-content{
+ display: block;
+}
+.row{  
+ display: -ms-flexbox; 
+ display: flex;
+ -ms-flex-wrap: wrap; 
+ flex-wrap: wrap;
+}
+.side{
+ -ms-flex: 25%;
+ flex: 25%;
+}
+.side .side-box{
+ background-color: #fff;
+ padding: 20px;
+ margin:10px;
+ box-shadow: 2px 5px 30px rgba(0,0,0,.1);
+}
+ form {
+        background-color:black;
+        width: 200px;
+        height: 44px;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+		padding-right:10%;
+		direction:rtl;
+      }
+
+      input {
+        all: unset;
+        font: 16px system-ui;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+      }
+
+      ::placeholder {
+        color: #fff;
+        opacity: 0.7; 
+      }
+
+      svg {
+        color: #fff;
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+      }
+
+      button {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+      }
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+p{direction:rtl;margin-right:14%;}
+.h4{direction:rtl;margin-right:4%;}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 35%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color:white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 35%;
+  margin-top:3%;
+  margin-left:9%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<ul class="MyMenu" >
+ <li class="dropdown">
+ <a href="javascript:void(0)"  class="dropbtn" style="margin-top:5%;font-weight:bold;">ارتباط با ما</a>
+ <div class="dropdown-content">
+   <a href="#ca">شماره تماس</a>
+   <a href="#ad">آدرس اینترنتی</a>
+   <a href="#ca">تماس آنلاین</a>
+    <a href="#im">ایمیل</a>
+  </div>
+</li>
+<li class="dropdown">
+ <a href="javascript:void(0)" class="dropbtn" style="margin-top:5%;font-weight:bold;">درباره ما</a>
+ <div class="dropdown-content">
+   <a href="tanasob.fitilam.ir ">ورزشی</a>
+   <a href="#food">برنامه انلاین</a>
+   <a href="#food">تغذیه</a>
+    <a href="#food">برنامه تغذیه آنلاین</a>
+  </div>
+ </li>
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn" style="margin-top:5%;font-weight:bold;">دسته بندی</a>
+  <div class="dropdown-content">
+   <a href="#">حرفه ای</a>
+   <a href="#">مبتدی</a>
+   <a href="#">تخصصی</a>
+    <a href="#">خصوصی</a>
+  </div>
+ </li>
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn" style="margin-top:5%;font-weight:bold;">خدمات</a>
+  <div class="dropdown-content">
+   <a href="#save">بدنسازی</a>
+   <a href="#save">فیتنس</a>
+   <a href="#save">یوگا</a>
+    <a href="#save">آمادگی جسمانی</a>
+	 <a href="#save">کراسفیت</a>
+  </div>
+ </li>
+ <li class="dropdown" >
+   <a href="javascript:void(0)" class="dropbtn" style="margin-top:5%;font-weight:bold;">فروشگاه</a>
+  <div class="dropdown-content">
+   <a href="#food">تغذیه حجمی</a>
+   <a href="#food">تغذیه کاهش وزن</a>
+   <a href="#food">نوشیدنی ها</a>
+    <a href="#food">کافی شاپ</a>
+	 <a href="#food">سبزیجات</a>
+  </div>
+ </li>
+ <li class="dropdown"  >
+   <a href="javascript:void(0)" class="dropbtn" style="margin-top:5%;font-weight:bold;">ثبت نام آنلاین</a>
+  <div class="dropdown-content">
+   <a href="#save">بدنسازی</a>
+   <a href="#save">فیتنس</a>
+   <a href="#save">یوگا</a>
+    <a href="#save">آمادگی جسمانی</a>
+	 <a href="#save">کراسفیت</a>
+  </div>
+ </li>
+ <li><a href="https://www.alsatpardakht.com/Services/5"  style="margin-top:5%;font-weight:bold;">درگاه پرداخت</a></li>
+<div style="float:left;width:15%;height:10;dir:rtl;">
+ <li class="dropdown"  >
+<form role="search" id="form" >
+      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+      <button>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+    </form>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'pagedart.com';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+</li>
+</ul>
+</div>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://takhfifan.com/blog/wp-content/uploads/2018/12/4.jpg" style="width:100%;height:60%;">
+  <div class="text">on</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://chibepoosham.com/wp-content/uploads/2017/01/Picture1.jpg" style="width:100%;height:60%;">
+  <div class="text"> Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://nexsc.ir/red?url=https%3A%2F%2Fzhaviz.com%2Fwp-content%2Fuploads%2F2020%2F05%2FEntrenamiento-Gym-o-Casa.jpg" style="width:100%;height:60%;">
+  <div class="text"> Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+<br>
+
+<h2 style="text-align:center;background-color:black;font-weight:bold;color:white;"> باشگاه ورزشی تناسب</h2>
+<br>
+<br>
+<div style="float:right;background-color:#D3D3D3;width:20%;height:95%;">
+<div style="float:right;background-color:#C0C0C0;width:90%;height:25%;margin:10px 10px 10px 10px;">
+<b><p>انواع برنامه های باشگاه شامل :</p></b>
+<a href=""><b><p style="margin-right:23%;"> ارائه و ثبت برنامه غذایی <p></b></a>
+<a href=""><b><p style="margin-right:23%;"> ارائه و ثبت برنامه تمرینی<p></b></a>
+
+</div>
+<div style="float:right;background-color:#C0C0C0;width:90%;height:25%;margin:10px 10px 10px 10px;">
+<b><p style="margin-right:28%;">خدمات باشگاهی </p></b>
+<table  dir="rtl" width="100%" >
+<tr>
+<td><a href=""><b><p>بدنسازی</p></b></a></td>
+<td><a href=""><b><p>فیتنس</p></b></a></td>
+</tr>
+<tr>
+<td><a href=""><b><p>TRX</p></b></a></td>
+<td><a href=""><b><p>کراسفیت</p></b></a></td>
+</tr>
+</table>
+</div>
+<div style="float:right;background-color:#C0C0C0;width:90%;height:25%;margin:10px 10px 10px 10px;">
+<a href=""><h4 class="h4"> توضیحات</h4></a>
+<a href=""><h4 class="h4"> ثبت نام</h4></a>
+<a href=""><h4 class="h4"> گالری تصاویر</h4></a>
+
+</div>
+</div>
+<div style="float:left;background-color:#D3D3D3;width:75%;height:97%;margin-left:2%;">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://gomag.ir/wp-content/uploads/2019/10/woman-working.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://takhfifbazan.com/Data/Deal/36751/1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://takhfifbazan.com/Data/Deal/23952/1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://www.bashgam.com/uploads/article/660-1655297290.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+ 
+</div>
+
+
+
+
+
+</div>
+</hr>
+<div style="width:100%;height:40%;background-color:black;margin-top:50%;">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
